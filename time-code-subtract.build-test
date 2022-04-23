@@ -1,0 +1,4 @@
+gcc time-code-subtract.c -o time-code-subtract 
+./time-code-subtract 1:39 47
+./time-code-subtract 5:00 1:20
+./time-code-subtract 1:00:00 1
