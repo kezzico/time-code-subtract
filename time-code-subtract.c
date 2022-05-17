@@ -45,6 +45,19 @@ struct time argToTime(char* arg) {
 		poo = strtok(0, ":");
 	};
 
+	// normalize 0:66:00 -> 1:06:00
+	if(t.seconds > 59) {
+		t.minutes += t.seconds / 60;
+
+		t.seconds = t.seconds % 60;
+	}
+
+	if(t.minutes > 59) {
+		t.hours += t.minutes / 60;
+
+		t.minutes = t.minutes % 60;
+	}
+
 	return t;
 }
 
