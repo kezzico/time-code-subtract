@@ -1,7 +1,7 @@
-##BUILD
+## BUILD
 gcc time-code-subtract.c -o time-code-subtract 
 
-##USAGE
+## USAGE
 time-code-subtract <start time> <end time>
 
 Example
